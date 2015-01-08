@@ -30,7 +30,7 @@ function getResource() {
 }
 
 function validUrl(url) {
-     return url.match(/^(ht|f)tps?:\/\/[a-z0-9-\.]+\.[a-z]{2,4}\/?([^\s<>\#%"\,\{\}\\|\\\^\[\]`]+)?/) != null ? true : false;
+     return url.match(/^(ht|f)tps?:\/\/[a-z0-9-\.]+(\.[a-z]{2,4})?\/?([^\s<>\#%"\,\{\}\\|\\\^\[\]`]+)?/) != null ? true : false;
 }
 
 function get_query_as_json(plain_query) {
