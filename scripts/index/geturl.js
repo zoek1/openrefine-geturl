@@ -21,7 +21,7 @@ function getResource() {
       return  query["resource"];
     } 
 
-    if (query["resource"] && validUrl(decodeURIComponent(query["resource"])) {
+    if (query["resource"] && validUrl(decodeURIComponent(query["resource"]))) {
       return decodeURIComponent(query["resource"]);
     }
     
